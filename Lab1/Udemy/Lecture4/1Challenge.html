@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .table1{
+      border-style: outset;
+      background-color: cyan;
+      border: 2px solid black;
+    }
+    .table2{
+      border-style: inset;
+      background-color: gold;
+      padding: 15px;
+    }
+    .table3{
+      border-style: dotted;
+      background-color: cyan;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 40px;
+    }
+    .table4{
+      border-style: dashed;
+      background-color: gold;
+      border-spacing: 30px;
+    }
+    .table5{
+      border-style: solid;
+      background-color: cyan;
+    }
+    .table6{
+      border-style: double;
+      background-color: gold;
+    }
+    .table7{
+      border-style: groove;
+      background-color: cyan;
+    }
+    .table8{
+      border-style: ridge;
+      background-color: gold;
+    }
+    .table9{
+      border-style: none;
+      background-color: cyan;
+    }
+    .table10{
+      border-style: hidden; background-color: gold;
+    }
+
+  </style>
+</head>
+
+<body>
+<!-- 1 -->
+<table style="width:100%" class="table1">
+  <tr class="t1">
+    <th colspan="1">Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+    <th>outset</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table><br>
+
+
+<!-- 2 -->
+<table style="width:100%" class="table2">
+  <tr class="t1">
+    <th rowspan="2">Firstname</th>
+    <th rowspan="2">Lastname</th>
+    <th rowspan="2">Age</th>
+    <th rowspan="2">inset</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table><br>
+
+<!-- 3 -->
+<table style="width:100%" class="table3">
+  <colgroup>
+    <col span="2" style="background-color: #ff6347">
+  </colgroup>
+  <tr class="t1">
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+    <th>dotted</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table><br>
+
+<!-- 4 -->
+<table style="width:100%" class="table4">
+  <tr class="t1">
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+    <th>dashed</th>>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table><br>
+<!-- 5 -->
+<table style="width:100%" class="table5">
+  <tr class="t1">
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+    <th>solid</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table><br>
+<!-- 6 -->
+<table style="width:100%" class="table6">
+  <tr class="t1">
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+    <th>double</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table><br>
+<!-- 7 -->
+<table style="width:100%" class="table7">
+  <tr class="t1">
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+    <th>groove</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table><br>
+<!-- 8 -->
+<table style="width:100%" class="table8">
+  <tr class="t1">
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+    <th>ridge</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table><br>
+<!-- 9 -->
+<table style="width:100%" class="table9">
+  <tr class="t1">
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+    <th>none</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table><br>
+<!-- 10 -->
+<table style="width:100%" class="table10">
+  <tr class="t1">
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+    <th>hidden</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!--Using The id Attribute-->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #myHeader {
+      background-color: lightblue;
+      color: black;
+      padding: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h1 id="myHeader">My Header</h1>
+
+</body>
+</html>
+<!--Difference Between Class and ID-->
+<style>
+  /* Style the element with the id "myHeader" */
+  #myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+  }
+
+  /* Style all elements with the class name "city" */
+  .city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+  }
+</style>
+
+<!-- An element with a unique id -->
+<h1 id="myHeader">My Cities</h1>
+
+<!-- Multiple elements with same class -->
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+<!--HTML Bookmarks with ID and Links-->
+<h2 id="C4">Chapter 4</h2>
+<a href="#C4">Jump to Chapter 4</a>
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+<!--Using The id Attribute in JavaScript-->
+<script>
+  function displayResult() {
+    document.getElementById("myHeader").innerHTML = "Have a nice day!";
+  }
+</script>
