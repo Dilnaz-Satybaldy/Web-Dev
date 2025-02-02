@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fafafa;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .phone-mockup {
+            width: 380px;
+            height: 600px;
+        }
+        .phone-mockup img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .login-box {
+            background: #fff;
+            padding: 40px;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+            width: 350px;
+            border-radius: 10px;
+        }
+        .login-box h2 {
+            font-family: 'Billabong', cursive;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+        .divider::before,
+        .divider::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #dbdbdb;
+        }
+        .divider span {
+            margin: 0 10px;
+            color: #8e8e8e;
+            font-weight: bold;
+        }
+        .fb-login {
+            color: #385185;
+            font-weight: bold;
+            display: block;
+            margin: 10px 0;
+        }
+        .register {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+        }
+        .app-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .app-links img {
+            width: 135px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="phone-mockup">
+        <img src="/Lab2/instagram/phones.png" alt="Instagram Preview">
+    </div>
+    <div>
+        <div class="login-box">
+            <h2>Instagram</h2>
+            <input type="text" placeholder="Телефон, имя пользователя или эл. адрес">
+            <input type="password" placeholder="Пароль">
+            <button>Войти</button>
+            <div class="divider"><span>ИЛИ</span></div>
+            <a href="#" class="fb-login">Войти через Facebook</a>
+            <p><a href="#">Забыли пароль?</a></p>
+        </div>
+        <div class="register">
+            У вас ещё нет аккаунта? <a href="#">Зарегистрироваться</a>
+        </div>
+        <div class="app-links">
+            <p>Установите приложение.</p>
+            <img src="/Lab2/instagram/apple_store.png" alt="Загрузить в App Store">
+            <img src="/Lab2/instagram/google_play.png" alt="Доступно в Google Play">
+        </div>
+    </div>
+</div>
+</body>
+</html>
