@@ -1,0 +1,16 @@
+<div class="prodcuts-container">
+    <div class="product-card" *ngFor="let product of products">
+        <div class="product-card-image">
+            <img src="{{product.image}}" alt="{{product.name}}">
+        </div>
+        <div class="product-card-name">
+            <a href="{{product.link" target="_blank">{{ product.name }}</a>
+        </div>
+        <div class="product-card-description">
+            <p>{{ product.description }}</p>
+        </div>
+        <div class="product-card-rating">
+            <p>rating: {{ product.rating }}  ⭐</p>
+        </div>
+    </div>
+</div>

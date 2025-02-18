@@ -1,0 +1,37 @@
+.prodcuts-container {
+    width: 900px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product-card {
+    width: 270px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.product-card-image {
+    height: 200px;
+}
+.product-card-image > img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-card-name {
+    padding: 10px 5px;
+    font-size: 18px;
+    height: 50px;
+}
+.product-card-description {
+    font-size: 14px;
+    font-weight: 600;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.product-card-rating {
+}
