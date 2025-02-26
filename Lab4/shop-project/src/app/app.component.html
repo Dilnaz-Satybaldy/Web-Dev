@@ -1,0 +1,36 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+<div>
+    <div style="display:flex;
+justify-content: center;
+align-items: center;
+background-color: #1E3A8A;
+padding: 0;
+color: white;
+">
+
+        <h1>Bebra Shop</h1>
+
+    </div>
+
+    <h2 class="category-chose">Выберите категорию:</h2>
+    <div class="categories-container">
+        <div *ngFor="let category of categories">
+            <button class="category-types" (click)="SelectCategory(category)">
+                {{category.name}}
+            </button>
+        </div>
+    </div>
+
+    <div>
+        <h1 style="padding-left: 50px; font-weight: bold; ">{{sortType}}</h1>
+        <select style="position: relative; height: 30px; width: 200px; padding-left: 30px; margin-left: 50px;" [(ngModel)]="sortType" (change)="sortProducts()">
+            <option *ngFor="let sort of sortTypes">{{sort}}</option>
+        </select>
+
+
+    </div>
+
+    <app-product-list *ngIf="selectedCategory" [selectedCategory]="selectedCategory"></app-product-list>
+</div>

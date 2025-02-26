@@ -1,0 +1,20 @@
+.category-chose {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.category-types {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background-color: #F3F4F6;
+    border: none;
+    color: #0A2540;
+}
+
+.categories-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 50px;
+}
