@@ -1,0 +1,116 @@
+
+.company-info {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: var(--accent-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 6px 12px var(--shadow-color);
+    transform: translateY(-2px);
+  }
+
+  .company-details {
+    .company-name {
+      font-size: 28px;
+      font-weight: bold;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: darken(#4e893f, 10%);
+        text-shadow: 0 2px 4px var(--shadow-color);
+      }
+    }
+
+    .company-city,
+    .company-address,
+    .company-description {
+      font-size: 16px;
+      color: darken(#4e893f, 20%);
+      margin-bottom: 8px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+
+    .button-group {
+      margin-top: 20px;
+
+      .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 0 4px 8px var(--shadow-color);
+        transition: all 0.3s ease;
+
+        &.btn-primary {
+          background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+          color: white;
+          margin-right: 10px;
+
+          &:hover {
+            background: linear-gradient(to right, darken(#4e893f, 10%), var(--secondary-color));
+            box-shadow: 0 6px 12px var(--shadow-color);
+            transform: scale(1.05);
+          }
+
+          &:active {
+            background: darken(#4e893f, 15%);
+            box-shadow: 0 2px 4px var(--shadow-color);
+            transform: scale(0.98);
+          }
+
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px var(--accent-color);
+          }
+        }
+
+        &.btn-secondary {
+          background-color: var(--accent-color);
+          color: var(--primary-color);
+          border: 1px solid var(--primary-color);
+
+          &:hover {
+            background: var(--secondary-color);
+            box-shadow: 0 6px 12px var(--shadow-color);
+            transform: scale(1.05);
+          }
+
+          &:active {
+            background: darken(#90cd7a, 15%);
+            box-shadow: 0 2px 4px var(--shadow-color);
+            transform: scale(0.98);
+          }
+
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px var(--accent-color);
+          }
+        }
+      }
+    }
+  }
+
+  .loading {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: darken(#4e893f, 10%);
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.main-header {
+  height: 70px;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease; 
+
+  &:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-2px); 
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      color: white;
+      font-weight: 700;
+      letter-spacing: 1px;
+      transition: all 0.2s ease; 
+      cursor: pointer; 
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.9); 
+        transform: scale(1.02); 
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.8); 
+        transform: scale(0.98); 
+      }
+
+      &:focus {
+        outline: none; 
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+      }
+    }
+  }
+}
